@@ -1,0 +1,14 @@
+{
+  "name": "@acme/ravenstash-example",
+  "version": "1.0.0",
+  "description": "Minimal private npm package configured for Ravenstash.",
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "exports": "./index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
