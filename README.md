@@ -70,6 +70,8 @@ Create a narrowly scoped automation token owned by the same account or organizat
 
 Replace `acme/packages` in the CI files with the exact target shown in Ravenstash. See the [GitHub Actions](https://docs.ravenstash.com/ci/github-actions/) and [GitLab CI/CD](https://docs.ravenstash.com/ci/gitlab-ci/) guides.
 
+CI jobs install an exact `rvs` version so a new CLI release cannot change a pipeline unannounced. The CLI is pre-1.0 and can change commands between minor releases; raise the version deliberately after reading the [changelog](https://github.com/rvstash/ravenstash-cli/blob/main/CHANGELOG.md). GitHub Actions use [`rvstash/setup-ravenstash`](https://github.com/rvstash/setup-ravenstash), pinned to a full commit SHA. GitLab jobs use the portable installer with `RVS_INSTALL_VERSION`.
+
 ## Generated endpoints
 
 You normally do not need to copy a URL: `rvs` discovers the endpoint for the selected target. The Ravenstash repository view shows generated endpoints when you need to configure a client that does not have an `rvs` wrapper.
