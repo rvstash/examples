@@ -17,6 +17,12 @@ rvs pip install ravenstash-example==1.0.0
 python -c 'from ravenstash_example import registry_greeting; print(registry_greeting())'
 ```
 
+To build with pypa/build instead of uv, `rvs python -m build` installs the build requirements from the selected repository:
+
+```bash
+rvs python -m build
+```
+
 You can also publish the built files with Twine:
 
 ```bash

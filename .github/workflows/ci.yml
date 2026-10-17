@@ -27,5 +27,5 @@ jobs:
       - uses: rvstash/setup-ravenstash@969c51bc762cc75cbe5707e99b63aedad7bd22da # v0.1.0
         with:
           # Keep equal to the version in the CI examples.
-          version: "0.15.1"
+          version: "0.16.0"
       - run: python3 scripts/check_rvs_commands.py

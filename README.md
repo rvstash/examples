@@ -43,7 +43,7 @@ rvs uv build
 rvs uv publish
 rvs pip install ravenstash-example==1.0.0
 
-# npm
+# npm (or the same commands with rvs pnpm)
 rvs npm test
 rvs npm pack --dry-run
 rvs npm publish

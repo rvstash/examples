@@ -14,7 +14,7 @@ npm-publish:
   rules:
     - if: $CI_COMMIT_TAG =~ /^npm-v/
   script:
-    - curl -fsSL https://ravenstash.com/install.sh | RVS_INSTALL_METHOD=portable RVS_INSTALL_VERSION=0.15.1 bash
+    - curl -fsSL https://ravenstash.com/install.sh | RVS_INSTALL_METHOD=portable RVS_INSTALL_VERSION=0.16.0 bash
     - export PATH="$HOME/.local/bin:$PATH"
     - cd npm
     - rvs art select acme/packages
